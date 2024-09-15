@@ -50,7 +50,7 @@ function dayofTheWeek(day, month, year) {
 
 function fetchWeatherData() {
     // Enter your key here ⬇️⬇️
-    fetch(`http://api.weatherapi.com/v1/current.json?key=4bc8561a3654496f97e45740241509&q=${cityInput}`)
+    fetch(`https://cors-anywhere.herokuapp.com/http://api.weatherapi.com/v1/current.json?key=4bc8561a3654496f97e45740241509&q=${cityInput}`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
